@@ -47,14 +47,15 @@ Filtration is split across two locations: sediment filters **before** the elevat
 ### 2.2 Complete System Flow
 
 ```
-Collection tanks → [Stage 1: 20μm Sediment] → [Stage 2: 5μm Sediment]
+Collection tanks → DC Solar Pump → Stage 1 (20μm Sediment) → Stage 2 (5μm Sediment)
     → Elevated Tank (2,000L)
-        → [Stage 3: Carbon Filter] → [Stage 4: UV Sterilizer]
-            → Booster Pump → House distribution
-                → RO Filter (kitchen drinking water only)
+        → Booster Pump
+            → Stage 3 (Carbon Filter) → Stage 4 (UV Sterilizer)
+                → House distribution
+                    → RO Filter (kitchen drinking water only)
 ```
 
-> **🔑 KEY POINT:** Stages 1 & 2 (sediment) go **BEFORE** the elevated tank. Stages 3 & 4 (carbon + UV) go **AFTER** the elevated tank and **BEFORE** the booster pump.
+> **🔑 KEY POINT:** Stages 1 & 2 (sediment) go **BEFORE** the elevated tank, pushed by the DC solar pump. The booster pump comes **AFTER** the elevated tank and pushes water through Stages 3 & 4 (carbon + UV) before reaching the house.
 
 ### 2.3 Stage-by-Stage Description
 
@@ -165,4 +166,4 @@ Install on **each downpipe** feeding the ground collection tanks.
 
 ---
 
-> **✅ SUMMARY:** Split filtration — Stages 1 & 2 (sediment) BEFORE elevated tank. Stages 3 & 4 (carbon + UV) AFTER elevated tank and BEFORE booster pump. UV rated 20–25 LPM minimum. Add first flush diverters to all downpipes. Keep tank dark and sealed. Annual running cost approximately **3,000–3,800 THB ($86–$109)**.
+> **✅ SUMMARY:** DC solar pump pushes water from collection tanks through Stages 1 & 2 (sediment) into the elevated tank. Booster pump then pushes water from the elevated tank through Stage 3 (carbon) and Stage 4 (UV) to the house. UV rated 20–25 LPM minimum. Add first flush diverters to all downpipes. Keep tank dark and sealed. Annual running cost approximately **3,000–3,800 THB ($86–$109)**.
