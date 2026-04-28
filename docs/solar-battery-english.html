@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Battery System</title>
+  <style>
+
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f2328;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.markdown-body {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 40px;
+}
+@media (max-width: 767px) {
+  .markdown-body { padding: 20px 16px; }
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+h1 { font-size: 2em; padding-bottom: 0.3em; border-bottom: 1px solid #d0d7de; }
+h2 { font-size: 1.5em; padding-bottom: 0.3em; border-bottom: 1px solid #d0d7de; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1em; }
+p { margin-top: 0; margin-bottom: 16px; }
+a { color: #0969da; text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #d0d7de;
+  border: 0;
+}
+blockquote {
+  margin: 0 0 16px 0;
+  padding: 0 1em;
+  color: #636c76;
+  border-left: 0.25em solid #d0d7de;
+}
+blockquote > :first-child { margin-top: 0; }
+blockquote > :last-child { margin-bottom: 0; }
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 2em;
+}
+li { margin-top: 0.25em; }
+li + li { margin-top: 0.25em; }
+code {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 85%;
+  background-color: #f6f8fa;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+}
+pre {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 85%;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 16px;
+  overflow: auto;
+  line-height: 1.45;
+  margin-top: 0;
+  margin-bottom: 16px;
+  word-wrap: normal;
+}
+pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 100%;
+  border-radius: 0;
+  white-space: pre;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 0;
+  margin-bottom: 16px;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  display: block;
+}
+table th {
+  font-weight: 600;
+  background-color: #f6f8fa;
+}
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid #d0d7de;
+}
+table tr { background-color: #ffffff; border-top: 1px solid #d0d7de; }
+table tr:nth-child(2n) { background-color: #f6f8fa; }
+
+  </style>
+</head>
+<body>
+  <article class="markdown-body">
+<h1>Solar Battery System</h1>
+<h2>Installation, Maintenance &amp; Upgrade Guide</h2>
+<p><strong>Chi River House — Satuek, Buriram Province, Thailand</strong></p>
+<p><em>Two independent 5kW+ solar systems — one per floor — fully off-grid</em></p>
+<hr />
+<h2>1. System Overview</h2>
+<p>The house runs on two completely independent solar systems, one powering the upstairs circuit and one powering the downstairs circuit. A fault or battery issue on one system does not affect the other.</p>
+<p>All panels, inverters, and batteries are <strong>PSI Energy</strong> brand throughout — a matched, integrated installation.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Upstairs System</strong></th>
+<th><strong>Downstairs System</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Panels</td>
+<td>10 × PSI Energy 550W</td>
+<td>10 × PSI Energy 500W</td>
+</tr>
+<tr>
+<td>Generation</td>
+<td>5.5kW</td>
+<td>5.0kW</td>
+</tr>
+<tr>
+<td>Inverter</td>
+<td>PSI Energy Hybrid Pro 6 (Sep 2023)</td>
+<td>PSI Energy Hybrid Pro 6 (Apr 2023)</td>
+</tr>
+<tr>
+<td>Batteries</td>
+<td>3 × PSI Energy LiFePO4 48V 100Ah</td>
+<td>2 × PSI Energy LiFePO4 48V 100Ah</td>
+</tr>
+<tr>
+<td>Battery capacity</td>
+<td>14.4kWh total / 7.2kWh usable (50% DoD)</td>
+<td>9.6kWh total / 4.8kWh usable (50% DoD)</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>✅ Fully operational</td>
+<td>⚠️ Battery replacement required</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. What Each System Powers</h2>
+<h3>2.1 Upstairs System</h3>
+<ul>
+<li>Master bedroom air conditioner</li>
+<li>South-facing bedroom air conditioner</li>
+<li>West-facing bedroom air conditioner</li>
+<li>Washing machine (upstairs shared bathroom)</li>
+</ul>
+<blockquote>
+<p><strong>💡 NOTE:</strong> Guests should run the washing machine during daylight hours when solar panels are actively generating. Running it at night draws from battery storage and can significantly impact overnight reserves.</p>
+</blockquote>
+<h3>2.2 Downstairs System</h3>
+<ul>
+<li>4th bedroom (downstairs) air conditioner</li>
+<li>Great room — 2 × air conditioner units</li>
+<li>Refrigerator</li>
+<li>Booster pump (house water pressure)</li>
+<li>Fence lighting — 20 × 8W bulbs (auto dusk-to-dawn, ~160W continuous)</li>
+</ul>
+<blockquote>
+<p><strong>💡 NOTE:</strong> Great room AC units work well for daytime cooling. To preserve overnight battery reserves, avoid running great room AC all night. All bedroom AC units can run overnight without issue.</p>
+</blockquote>
+<hr />
+<h2>3. Battery Technology — LiFePO4</h2>
+<p>Both systems use <strong>Lithium Iron Phosphate (LiFePO4)</strong> batteries — the premium chemistry for off-grid solar installations.</p>
+<p><strong>Advantages over lead-acid:</strong><br />
+- Much longer cycle life — 2,000–4,000+ cycles vs 300–500 for lead-acid<br />
+- Safer chemistry — no risk of thermal runaway<br />
+- More efficient charge/discharge — less energy wasted as heat<br />
+- Better performance in high temperatures — important for Thailand's climate<br />
+- Flatter discharge curve — more usable capacity per charge</p>
+<p><strong>Expected lifespan:</strong><br />
+- Rated cycle life: 2,000–4,000 cycles at 80% depth of discharge<br />
+- At approximately 1 cycle per day: <strong>5–11 years</strong> under normal conditions<br />
+- Calendar life: approximately <strong>10–15 years</strong></p>
+<p><strong>Key factor — heat:</strong> Sustained high temperatures accelerate battery degradation. The battery room has no air conditioning. Monitor battery temperatures periodically and ensure adequate ventilation.</p>
+<hr />
+<h2>4. The Downstairs Battery Problem</h2>
+<h3>4.1 Symptoms</h3>
+<ul>
+<li>One battery consistently holds higher charge than the other (observed: 93% vs 74%)</li>
+<li>Batteries no longer reliably power the downstairs circuit overnight</li>
+<li>Premature failure — batteries are approximately 2 years old</li>
+</ul>
+<h3>4.2 Root Cause: Cell Imbalance</h3>
+<p>The two downstairs batteries are not properly balanced with each other. The inverter sees the combined bank voltage only — it has no visibility into individual battery state of charge. As a result:</p>
+<ul>
+<li>The higher battery reaches full voltage first → inverter stops charging → lower battery is chronically undercharged</li>
+<li>The lower battery hits low voltage first → inverter cuts off → usable capacity in the higher battery is stranded</li>
+<li>Over time, the lower battery never completes a full charge/discharge cycle → accelerated degradation</li>
+</ul>
+<p><strong>Contributing factors likely include:</strong><br />
+- Unequal cable lengths between batteries causing resistance imbalance<br />
+- No battery balancer installed to equalize charge between individual batteries</p>
+<hr />
+<h2>5. The Fix — Both Systems</h2>
+<h3>5.1 Equal Length Interconnect Cables</h3>
+<p>All cables connecting batteries within a bank must be <strong>identical length and identical gauge (AWG)</strong>. Unequal cable lengths create unequal resistance, which causes uneven current distribution and imbalance between batteries.</p>
+<p>This applies to both the downstairs replacement bank and should be verified on the upstairs existing bank.</p>
+<h3>5.2 Inverter Cable Connection Point</h3>
+<p>The cable from the inverter to the battery bank should connect to the <strong>middle battery</strong> in a 3-battery bank — not to the first or last battery. This promotes more even current distribution across all three batteries naturally.</p>
+<h3>5.3 Active Battery Balancer</h3>
+<p>Install an <strong>active battery balancer</strong> on each battery bank. This device:</p>
+<ul>
+<li>Connects across each individual battery's terminals</li>
+<li>Continuously monitors voltage of each battery independently</li>
+<li>Transfers small amounts of current from higher-charged batteries to lower-charged ones</li>
+<li>Keeps all batteries in the bank at equal state of charge at all times</li>
+<li>Works automatically and continuously — no configuration required</li>
+</ul>
+<p><strong>Why not passive?</strong><br />
+- Passive balancers dump excess energy as heat — wasteful<br />
+- Active balancers transfer energy between batteries — much more efficient</p>
+<p><strong>Recommended brands:</strong> Heltec, Daly<br />
+<strong>Specification needed:</strong> 48V LiFePO4 active balancer<br />
+<strong>Approximate cost:</strong> 700–1,500 THB per unit (~$20–$43)<br />
+<strong>Units required:</strong> 2 (one per system)</p>
+<h3>5.4 Summary of Required Work</h3>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Upstairs</th>
+<th>Downstairs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Replace batteries</td>
+<td>Not required</td>
+<td>Replace 2 batteries with 3 × PSI Energy LiFePO4 48V 100Ah</td>
+</tr>
+<tr>
+<td>Equal length cables</td>
+<td>Verify and correct if needed</td>
+<td>Install correctly with new battery bank</td>
+</tr>
+<tr>
+<td>Inverter connects to middle battery</td>
+<td>Verify</td>
+<td>Install correctly</td>
+</tr>
+<tr>
+<td>Active battery balancer</td>
+<td>Install (preventive)</td>
+<td>Install with new battery bank</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Overnight Load Analysis</h2>
+<h3>6.1 Downstairs System — Estimated Nightly Consumption</h3>
+<table>
+<thead>
+<tr>
+<th>Load</th>
+<th>Draw</th>
+<th>Duration</th>
+<th>Consumption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fence lighting (20 × 8W)</td>
+<td>160W</td>
+<td>11 hrs (dusk to dawn)</td>
+<td>1.76kWh</td>
+</tr>
+<tr>
+<td>Bedroom mini-split (maintaining temp)</td>
+<td>~80W</td>
+<td>8 hrs</td>
+<td>0.64kWh</td>
+</tr>
+<tr>
+<td>Refrigerator (cycling)</td>
+<td>~65W average</td>
+<td>All night</td>
+<td>0.52kWh</td>
+</tr>
+<tr>
+<td>Misc standby</td>
+<td>~20W</td>
+<td>All night</td>
+<td>0.18kWh</td>
+</tr>
+<tr>
+<td><strong>Total overnight</strong></td>
+<td></td>
+<td></td>
+<td><strong>~3.1kWh</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>6.2 Downstairs Battery Capacity (after upgrade to 3 batteries)</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total capacity</td>
+<td>3 × 48V 100Ah = 14.4kWh</td>
+</tr>
+<tr>
+<td>Usable at 50% DoD (recommended)</td>
+<td>7.2kWh</td>
+</tr>
+<tr>
+<td>Estimated overnight draw</td>
+<td>~3.1kWh</td>
+</tr>
+<tr>
+<td>Remaining at dawn (before charging)</td>
+<td>~4.1kWh</td>
+</tr>
+<tr>
+<td>Headroom</td>
+<td>✅ Comfortable margin</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>50% Depth of Discharge (DoD):</strong> LiFePO4 batteries can technically discharge to 80–90%, but staying above 50% significantly extends battery lifespan. The system should be configured to cut off at 50% DoD for longevity.</p>
+</blockquote>
+<h3>6.3 Upstairs System — Key Load Note</h3>
+<p>The washing machine draws 400–1,000W during operation. This is a significant but short-duration load. Always run during daylight hours to draw from panel generation rather than battery storage.</p>
+<hr />
+<h2>7. AC Units — Power Consumption Notes</h2>
+<p>All AC units are inverter-driven mini-split type. Power consumption varies significantly:</p>
+<ul>
+<li><strong>Cooling down (startup):</strong> 400–600W per unit — high draw while reaching target temperature</li>
+<li><strong>Maintaining temperature (overnight):</strong> 80–100W per unit — very low once stable</li>
+<li><strong>Great room units:</strong> Recommended for daytime use only to preserve downstairs overnight battery reserves</li>
+<li><strong>Bedroom units:</strong> Can run all night without issue on their respective systems</li>
+</ul>
+<hr />
+<h2>8. Solar Generation vs. Load</h2>
+<h3>8.1 Daily Generation Estimate (Thailand)</h3>
+<p>Thailand receives approximately 4–5 peak sun hours per day on average.</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Panel Output</th>
+<th>Peak Sun Hours</th>
+<th>Daily Generation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upstairs</td>
+<td>5.5kW</td>
+<td>4.5 hrs</td>
+<td>~24.75kWh</td>
+</tr>
+<tr>
+<td>Downstairs</td>
+<td>5.0kW</td>
+<td>4.5 hrs</td>
+<td>~22.5kWh</td>
+</tr>
+<tr>
+<td><strong>Combined</strong></td>
+<td><strong>10.5kW</strong></td>
+<td></td>
+<td><strong>~47kWh/day</strong></td>
+</tr>
+</tbody>
+</table>
+<p>On a normal sunny Thai day, both systems generate far more than the house consumes, with plenty of surplus to fully charge all batteries.</p>
+<h3>8.2 Cloudy Days</h3>
+<p>During extended cloudy periods (common during rainy season June–September):<br />
+- Generation can drop to 20–30% of rated output<br />
+- Battery reserves become important<br />
+- Prioritize bedroom AC over great room AC<br />
+- Run washing machine only when sun is visible</p>
+<hr />
+<h2>9. Battery Lifespan &amp; Replacement Planning</h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expected cycle life</td>
+<td>2,000–4,000 cycles</td>
+</tr>
+<tr>
+<td>At 1 cycle/day</td>
+<td>5–11 years</td>
+</tr>
+<tr>
+<td>Early failure warning signs</td>
+<td>Capacity drop, imbalance between batteries, longer charge times</td>
+</tr>
+<tr>
+<td>Downstairs current issue</td>
+<td>Premature failure at ~2 years due to imbalance — preventable with balancer</td>
+</tr>
+<tr>
+<td>Replacement cost estimate</td>
+<td>~8,000–12,000 THB per battery (~$230–$345)</td>
+</tr>
+<tr>
+<td>3-battery bank replacement cost</td>
+<td>~24,000–36,000 THB (~$685–$1,030)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>10. Recommended Maintenance Schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Frequency</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Check battery display readings</td>
+<td>Monthly</td>
+<td>All batteries in a bank should show similar voltage and charge %</td>
+</tr>
+<tr>
+<td>Check battery terminal connections</td>
+<td>Every 6 months</td>
+<td>Tighten if loose, check for corrosion</td>
+</tr>
+<tr>
+<td>Check inverter display for warnings</td>
+<td>Monthly</td>
+<td>Note any error codes</td>
+</tr>
+<tr>
+<td>Inspect panel surfaces for dust/debris</td>
+<td>Every 3 months</td>
+<td>Clean with soft cloth and water if dusty</td>
+</tr>
+<tr>
+<td>Check battery room ventilation</td>
+<td>Every 6 months</td>
+<td>Ensure airflow is not blocked</td>
+</tr>
+<tr>
+<td>Full system performance check</td>
+<td>Annually</td>
+<td>Have installer verify all settings and connections</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11. Where to Purchase Replacement Parts in Thailand</h2>
+<ul>
+<li><strong>PSI Energy batteries and panels:</strong> Contact PSI Corporation Co., Ltd. — www.psi.co.th</li>
+<li><strong>Active battery balancers (Heltec, Daly):</strong> Lazada Thailand, Shopee Thailand</li>
+<li><strong>General solar components:</strong> Global House (บุรีรัมย์/สุรินทร์), HomePro, or solar specialist shops in Buriram city</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>✅ SUMMARY:</strong> Install active battery balancers on both systems (700–1,500 THB each). Replace downstairs bank with 3 × PSI Energy LiFePO4 48V 100Ah batteries using equal length cables with inverter connected to middle battery. Upstairs system is fully operational — add balancer preventively. Run washing machine and great room AC during daylight hours only. Expected battery lifespan 5–11 years with proper balancing and 50% DoD discipline.</p>
+</blockquote>
+  </article>
+</body>
+</html>
