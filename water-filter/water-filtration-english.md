@@ -11,7 +11,15 @@
 
 ### 1.1 Primary Source: Rainwater
 
-Rainwater is collected from approximately 75% of the roof area via gutters into five 2,000L ground-level storage tanks (10,000L total). A float-activated transfer pump fills a sixth elevated 2,000L tank, which gravity-feeds the house supply line.
+Rainwater is collected from a total of **2,782 sq ft (258 square metres)** of roof area, comprising:
+
+- **924 sq ft** — 50% of the main ceramic tile roof (42ft × 44ft house)
+- **1,438 sq ft** — Thai kitchen metal roof extension (largest single collection surface)
+- **420 sq ft** — rear extension metal roof
+
+Water flows via gutters into five 2,000L ground-level storage tanks (10,000L total collection capacity). A float-activated transfer pump fills a sixth elevated 2,000L tank, which gravity-feeds the house supply line.
+
+At the regional average annual rainfall of 1,200–1,400mm, this roof area collects approximately **248,000–289,000 litres per year** — far exceeding tank capacity. The 12,000L tank storage provides approximately **9–10 days of full-occupancy supply** when full, making the Chi River backup essential during extended dry periods.
 
 Rainwater requires filtration for:
 
