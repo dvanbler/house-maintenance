@@ -1,125 +1,134 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ระบบกรองน้ำในบ้าน</title>
+  <title>water-filtration-thai</title>
   <style>
-
-*, *::before, *::after { box-sizing: border-box; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #1f2328;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-.markdown-body {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 32px 40px;
-}
-@media (max-width: 767px) {
-  .markdown-body { padding: 20px 16px; }
-}
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 24px;
-  margin-bottom: 16px;
-  font-weight: 600;
-  line-height: 1.25;
-}
-h1 { font-size: 2em; padding-bottom: 0.3em; border-bottom: 1px solid #d0d7de; }
-h2 { font-size: 1.5em; padding-bottom: 0.3em; border-bottom: 1px solid #d0d7de; }
-h3 { font-size: 1.25em; }
-h4 { font-size: 1em; }
-p { margin-top: 0; margin-bottom: 16px; }
-a { color: #0969da; text-decoration: none; }
-a:hover { text-decoration: underline; }
-strong { font-weight: 600; }
-em { font-style: italic; }
-hr {
-  height: 0.25em;
-  padding: 0;
-  margin: 24px 0;
-  background-color: #d0d7de;
-  border: 0;
-}
-blockquote {
-  margin: 0 0 16px 0;
-  padding: 0 1em;
-  color: #636c76;
-  border-left: 0.25em solid #d0d7de;
-}
-blockquote > :first-child { margin-top: 0; }
-blockquote > :last-child { margin-bottom: 0; }
-ul, ol {
-  margin-top: 0;
-  margin-bottom: 16px;
-  padding-left: 2em;
-}
-li { margin-top: 0.25em; }
-li + li { margin-top: 0.25em; }
-code {
-  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 85%;
-  background-color: #f6f8fa;
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
-}
-pre {
-  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 85%;
-  background-color: #f6f8fa;
-  border-radius: 6px;
-  padding: 16px;
-  overflow: auto;
-  line-height: 1.45;
-  margin-top: 0;
-  margin-bottom: 16px;
-  word-wrap: normal;
-}
-pre code {
-  background-color: transparent;
-  padding: 0;
-  font-size: 100%;
-  border-radius: 0;
-  white-space: pre;
-}
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-top: 0;
-  margin-bottom: 16px;
-  width: max-content;
-  max-width: 100%;
-  overflow: auto;
-  display: block;
-}
-table th {
-  font-weight: 600;
-  background-color: #f6f8fa;
-}
-table th, table td {
-  padding: 6px 13px;
-  border: 1px solid #d0d7de;
-}
-table tr { background-color: #ffffff; border-top: 1px solid #d0d7de; }
-table tr:nth-child(2n) { background-color: #f6f8fa; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1f2328;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 32px;
+  }
+  .markdown-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+  }
+  .markdown-body h1, .markdown-body h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #d0d7de;
+  }
+  .markdown-body h1 { font-size: 2em; margin: 0.67em 0; }
+  .markdown-body h2 { font-size: 1.5em; }
+  .markdown-body h3 { font-size: 1.25em; }
+  .markdown-body h4 { font-size: 1em; }
+  .markdown-body h5 { font-size: 0.875em; }
+  .markdown-body h6 { font-size: 0.85em; color: #656d76; }
+  .markdown-body h1, .markdown-body h2, .markdown-body h3,
+  .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .markdown-body p { margin-top: 0; margin-bottom: 16px; }
+  .markdown-body a { color: #0969da; text-decoration: none; }
+  .markdown-body a:hover { text-decoration: underline; }
+  .markdown-body code {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 85%;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    padding: 0.2em 0.4em;
+  }
+  .markdown-body pre {
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    font-size: 85%;
+    line-height: 1.45;
+    overflow: auto;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .markdown-body pre code {
+    background-color: transparent;
+    border: 0;
+    display: inline;
+    font-size: 100%;
+    line-height: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    word-wrap: normal;
+  }
+  .markdown-body blockquote {
+    border-left: 0.25em solid #d0d7de;
+    color: #656d76;
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+  }
+  .markdown-body ul, .markdown-body ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+  }
+  .markdown-body li + li { margin-top: 0.25em; }
+  .markdown-body li > ul, .markdown-body li > ol { margin-top: 0.25em; margin-bottom: 0; }
+  .markdown-body img { max-width: 100%; border-style: none; }
+  .markdown-body hr {
+    background-color: #d0d7de;
+    border: 0;
+    height: 0.25em;
+    margin: 24px 0;
+    padding: 0;
+  }
+  .markdown-body table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+    width: max-content;
+    margin-bottom: 16px;
+  }
+  .markdown-body table th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+  }
+  .markdown-body table th, .markdown-body table td {
+    border: 1px solid #d0d7de;
+    padding: 6px 13px;
+  }
+  .markdown-body table tr:nth-child(2n) { background-color: #f6f8fa; }
+  .markdown-body input[type="checkbox"] { margin-right: 0.5em; }
 
   </style>
 </head>
 <body>
-  <article class="markdown-body">
-<h1>ระบบกรองน้ำในบ้าน</h1>
-<h2>คู่มือการติดตั้งสำหรับช่าง</h2>
+  <div class="markdown-body">
+<h1 id="_1">ระบบกรองน้ำในบ้าน</h1>
+<h2 id="_2">คู่มือการติดตั้งสำหรับช่าง</h2>
 <p><strong>Chi River House — อำเภอสตึก จังหวัดบุรีรัมย์</strong></p>
 <p><em>แหล่งน้ำ: น้ำฝน (หลัก) | น้ำแม่น้ำชี (สำรองหน้าแล้ง)</em></p>
 <hr />
-<h2>1. แหล่งน้ำและคุณลักษณะ</h2>
-<h3>1.1 แหล่งหลัก: น้ำฝน</h3>
-<p>เก็บน้ำฝนจากรางน้ำหลังคาประมาณ 75% ลงถังเก็บ 5 ใบ (ขนาด 2,000 ลิตร/ใบ รวม 10,000 ลิตร) จากนั้นปั๊มสูบขึ้นถังยก 2,000 ลิตร เพื่อจ่ายน้ำให้บ้านโดยแรงโน้มถ่วง</p>
+<h2 id="1">1. แหล่งน้ำและคุณลักษณะ</h2>
+<h3 id="11">1.1 แหล่งหลัก: น้ำฝน</h3>
+<p>เก็บน้ำฝนจากพื้นที่หลังคารวม <strong>2,782 ตารางฟุต (258 ตารางเมตร)</strong> ประกอบด้วย:</p>
+<ul>
+<li><strong>924 ตารางฟุต</strong> — 50% ของหลังคากระเบื้องอาคารหลัก (บ้านขนาด 42 × 44 ฟุต)</li>
+<li><strong>1,438 ตารางฟุต</strong> — หลังคาโลหะครัวไทย (พื้นที่เก็บน้ำใหญ่ที่สุด)</li>
+<li><strong>420 ตารางฟุต</strong> — หลังคาโลหะส่วนต่อขยายด้านหลังบ้าน</li>
+</ul>
+<p>น้ำไหลผ่านรางน้ำลงถังเก็บ 5 ใบ (ขนาด 2,000 ลิตร/ใบ รวม 10,000 ลิตร) จากนั้นปั๊มสูบขึ้นถังยก 2,000 ลิตร เพื่อจ่ายน้ำให้บ้านโดยแรงโน้มถ่วง</p>
+<p>ด้วยปริมาณน้ำฝนเฉลี่ยต่อปีในพื้นที่บุรีรัมย์/สุรินทร์ประมาณ 1,200–1,400 มม. พื้นที่หลังคานี้สามารถเก็บน้ำได้ประมาณ <strong>248,000–289,000 ลิตร/ปี</strong> — มากกว่าความจุถังเก็บมาก ถังเก็บ 12,000 ลิตร เมื่อเต็มจะรองรับการใช้งานได้ประมาณ <strong>9–10 วัน</strong> สำหรับผู้พักอาศัย 10 คน ดังนั้นการสำรองน้ำจากแม่น้ำชีจึงมีความสำคัญในช่วงหน้าแล้งที่ไม่มีฝน</p>
 <p>น้ำฝนต้องผ่านการกรองเพื่อกำจัด:</p>
 <ul>
 <li><strong>ตะกอน/เศษวัสดุ</strong> — ฝุ่น ใบไม้ มูลสัตว์ สิ่งสกปรกจากหลังคา</li>
@@ -127,7 +136,7 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 <li><strong>สารอินทรีย์</strong> — ใบไม้ ตะไคร่น้ำในถัง</li>
 <li><strong>สารปนเปื้อนจากหลังคา</strong> — สีหลังคา สังกะสี</li>
 </ul>
-<h3>1.2 แหล่งสำรอง: น้ำแม่น้ำชี (พฤศจิกายน – มีนาคม)</h3>
+<h3 id="12">1.2 แหล่งสำรอง: น้ำแม่น้ำชี (พฤศจิกายน – มีนาคม)</h3>
 <p>ในช่วงหน้าแล้งที่ฝนไม่เพียงพอ ใช้ปั๊มเคลื่อนที่และสายยางสูบน้ำจากแม่น้ำชีมาเติมถังเก็บ น้ำแม่น้ำต้องการการกรองที่เข้มข้นกว่าเนื่องจาก:</p>
 <ul>
 <li><strong>ตะกอนสูง</strong> — แม่น้ำชีมีตะกอนแขวนลอยมาก</li>
@@ -139,8 +148,8 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 <p><strong>⚠️ สำคัญ:</strong> ระบบกรองต้องออกแบบให้รองรับทั้งสองแหล่งน้ำ น้ำแม่น้ำจะทำให้ไส้กรองอุดตันเร็วกว่าน้ำฝนมาก ควรวางแผนเปลี่ยนไส้กรองบ่อยขึ้นในช่วงหน้าแล้ง (พฤศจิกายน–มีนาคม)</p>
 </blockquote>
 <hr />
-<h2>2. ระบบกรองน้ำที่แนะนำ — แบบแยกส่วน</h2>
-<h3>2.1 เหตุใดจึงต้องแยกส่วน?</h3>
+<h2 id="2">2. ระบบกรองน้ำที่แนะนำ — แบบแยกส่วน</h2>
+<h3 id="21">2.1 เหตุใดจึงต้องแยกส่วน?</h3>
 <p>การกรองแบ่งออกเป็น 2 ตำแหน่ง: ไส้กรองตะกอน<strong>ก่อน</strong>ถังยก และการบำบัดสารเคมี/ชีวภาพ<strong>หลัง</strong>ถังยก เพราะ:</p>
 <ul>
 <li>ไส้กรองตะกอนก่อนถังยกป้องกันตะกอนสะสมในถังและไม่ให้อุดตันไส้กรองถัดไป</li>
@@ -148,18 +157,19 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 <li>การติดตั้ง UV ก่อนถังยกจะไม่ได้ผล — เชื้อโรคสามารถเติบโตใหม่ในน้ำที่เก็บไว้หลังจากฉาย UV แล้ว โดยเฉพาะในอากาศร้อนของไทย</li>
 <li>ถังยกควรเป็น<strong>สีทึบ/สีเข้ม</strong>เพื่อป้องกันการเจริญเติบโตของตะไคร่น้ำ และต้อง<strong>ปิดฝาสนิทพร้อมตาข่ายระบายอากาศ</strong></li>
 </ul>
-<h3>2.2 ลำดับการติดตั้งที่ถูกต้อง</h3>
-<pre><code>ถังเก็บ → ปั๊มโซลาร์ DC → ขั้นที่ 1 (ไส้กรองตะกอน 20μm) → ขั้นที่ 2 (ไส้กรองตะกอน 5μm)
+<h3 id="22">2.2 ลำดับการติดตั้งที่ถูกต้อง</h3>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>ถังเก็บ → ปั๊มโซลาร์ DC → ขั้นที่ 1 (ไส้กรองตะกอน 20μm) → ขั้นที่ 2 (ไส้กรองตะกอน 5μm)
     → ถังยก (2,000 ลิตร)
         → ปั๊มแรงดัน
             → ขั้นที่ 3 (ไส้กรองคาร์บอน) → ขั้นที่ 4 (เครื่อง UV)
                 → แจกจ่ายน้ำในบ้าน
                     → ไส้กรอง RO (น้ำดื่มในครัวเท่านั้น)
-</code></pre>
+</code></pre></div>
+
 <blockquote>
 <p><strong>🔑 สำคัญ:</strong> ขั้นที่ 1 และ 2 (ไส้กรองตะกอน) ติดตั้ง<strong>ก่อน</strong>ถังยก โดยปั๊มโซลาร์ DC เป็นตัวดันน้ำผ่าน ปั๊มแรงดันอยู่<strong>หลัง</strong>ถังยก และดันน้ำผ่านขั้นที่ 3 และ 4 (คาร์บอน + UV) ก่อนถึงบ้าน</p>
 </blockquote>
-<h3>2.3 รายละเอียดแต่ละขั้นตอน</h3>
+<h3 id="23">2.3 รายละเอียดแต่ละขั้นตอน</h3>
 <table>
 <thead>
 <tr>
@@ -210,8 +220,8 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 <p><strong>หมายเหตุ:</strong> ไส้กรอง RO ในครัวจัดการน้ำดื่มแยกต่างหาก ไม่ได้เป็นส่วนหนึ่งของระบบนี้</p>
 </blockquote>
 <hr />
-<h2>3. เครื่องฆ่าเชื้อโรค UV — ข้อกำหนดสำคัญ</h2>
-<h3>3.1 อัตราการไหลของน้ำ</h3>
+<h2 id="3-uv">3. เครื่องฆ่าเชื้อโรค UV — ข้อกำหนดสำคัญ</h2>
+<h3 id="31">3.1 อัตราการไหลของน้ำ</h3>
 <p>ต้องเลือกเครื่อง UV ที่รองรับอัตราการไหลสูงสุดของบ้าน สำหรับบ้านที่มีผู้ใช้งานสูงสุด 10 คน ต้องติดตั้งเครื่องที่รองรับ<strong>อย่างน้อย 20–25 ลิตร/นาที</strong></p>
 <table>
 <thead>
@@ -239,12 +249,12 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 </tr>
 </tbody>
 </table>
-<h3>3.2 ความใสของน้ำ</h3>
+<h3 id="32">3.2 ความใสของน้ำ</h3>
 <p>น้ำที่เข้าเครื่อง UV ต้องใส ควรต่ำกว่า <strong>1 NTU</strong> ถ้าน้ำขุ่นหรือมีสี แสง UV จะไม่สามารถทำลายเชื้อโรคได้อย่างมีประสิทธิภาพ นี่คือเหตุผลที่ต้องติดตั้งไส้กรองตะกอนขั้นที่ 1 และ 2 ก่อนเสมอ</p>
-<h3>3.3 การใช้ไฟฟ้า</h3>
+<h3 id="33">3.3 การใช้ไฟฟ้า</h3>
 <p>เครื่อง UV ขนาดกลางใช้ไฟฟ้าประมาณ <strong>16–25 วัตต์</strong> เฉพาะตอนทำงาน เนื่องจากทำงานเฉพาะเมื่อเปิดก๊อกน้ำ การใช้พลังงานต่อวันจริงประมาณ <strong>15 วัตต์ชั่วโมง</strong> — แทบไม่กระทบระบบโซลาร์เลย</p>
 <hr />
-<h2>4. ถังยก — แนวทางปฏิบัติที่ดี</h2>
+<h2 id="4">4. ถังยก — แนวทางปฏิบัติที่ดี</h2>
 <p>เนื่องจากการบำบัดด้วยคาร์บอนและ UV เกิดขึ้นหลังถังยก จึงต้องดูแลถังอย่างระมัดระวัง:</p>
 <ul>
 <li>ใช้ถัง<strong>สีทึบหรือสีเข้ม</strong> — แสงแดดส่งเสริมการเจริญเติบโตของตะไคร่น้ำ ความมืดช่วยยับยั้ง</li>
@@ -253,7 +263,7 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 <li>ปั๊มถ่ายเทน้ำที่เชื่อมต่อกับลูกลอยจะเติมน้ำให้ถังยกโดยอัตโนมัติในเวลากลางวัน</li>
 </ul>
 <hr />
-<h2>5. ตัวเบี่ยงน้ำทิ้ง First Flush Diverter (แนะนำ)</h2>
+<h2 id="5-first-flush-diverter">5. ตัวเบี่ยงน้ำทิ้ง First Flush Diverter (แนะนำ)</h2>
 <p>ติดตั้งตัวเบี่ยงน้ำทิ้งที่ท่อรางน้ำทุกเส้นที่เชื่อมต่อถังเก็บ อุปกรณ์นี้จะทิ้งน้ำส่วนแรกที่ไหลลงมาจากหลังคาโดยอัตโนมัติ ซึ่งมีสิ่งสกปรกมากที่สุด ก่อนที่น้ำสะอาดจะไหลเข้าถัง</p>
 <ul>
 <li>ลดภาระไส้กรองทั้งหมดได้อย่างมีนัยสำคัญ</li>
@@ -262,7 +272,7 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 </ul>
 <p>ติดตั้งที่<strong>ท่อรางน้ำทุกเส้น</strong>ที่เชื่อมต่อถังเก็บ</p>
 <hr />
-<h2>6. ตารางการดูแลรักษา</h2>
+<h2 id="6">6. ตารางการดูแลรักษา</h2>
 <table>
 <thead>
 <tr>
@@ -310,8 +320,8 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 </tbody>
 </table>
 <hr />
-<h2>7. ค่าใช้จ่ายโดยประมาณ</h2>
-<h3>7.1 ค่าติดตั้งครั้งเดียว</h3>
+<h2 id="7">7. ค่าใช้จ่ายโดยประมาณ</h2>
+<h3 id="71">7.1 ค่าติดตั้งครั้งเดียว</h3>
 <table>
 <thead>
 <tr>
@@ -348,7 +358,7 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 </tr>
 </tbody>
 </table>
-<h3>7.2 ค่าใช้จ่ายประจำปี</h3>
+<h3 id="72">7.2 ค่าใช้จ่ายประจำปี</h3>
 <table>
 <thead>
 <tr>
@@ -395,7 +405,7 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 <p><strong>หมายเหตุหน้าแล้ง:</strong> ในช่วงที่ใช้น้ำแม่น้ำ (พฤศจิกายน–มีนาคม) ไส้กรองตะกอนจะอุดตันเร็วกว่าปกติ ควรเผื่อค่าใช้จ่ายเพิ่มเติมประมาณ <strong>500–800 บาท (~$15–$23)</strong> ต่อปีสำหรับไส้กรองขั้นที่ 1 และ 2 ในช่วงนี้</p>
 </blockquote>
 <hr />
-<h2>8. สถานที่ซื้ออุปกรณ์ในประเทศไทย</h2>
+<h2 id="8">8. สถานที่ซื้ออุปกรณ์ในประเทศไทย</h2>
 <ul>
 <li><strong>โกลบอลเฮ้าส์ (Global House)</strong> — มีสาขาในบุรีรัมย์และสุรินทร์ มีไส้กรอง ตัวเรือน เครื่อง UV และอุปกรณ์ประปาครบ</li>
 <li><strong>HomePro</strong> — สินค้าหลากหลาย คุณภาพดี</li>
@@ -407,6 +417,7 @@ table tr:nth-child(2n) { background-color: #f6f8fa; }
 <blockquote>
 <p><strong>✅ สรุป:</strong> ปั๊มโซลาร์ DC ดันน้ำจากถังเก็บผ่านขั้นที่ 1 และ 2 (ไส้กรองตะกอน) เข้าถังยก จากนั้นปั๊มแรงดันดันน้ำจากถังยกผ่านขั้นที่ 3 (คาร์บอน) และขั้นที่ 4 (UV) ไปยังบ้าน เครื่อง UV ต้องรองรับ 20–25 ลิตร/นาทีขึ้นไป ติดตั้งตัวเบี่ยงน้ำทิ้งทุกท่อ ถังยกต้องสีทึบและปิดสนิท ค่าใช้จ่ายประจำปีประมาณ <strong>3,000–3,800 บาท ($86–$109)</strong></p>
 </blockquote>
-  </article>
+  </div>
 </body>
 </html>
+
